@@ -22,9 +22,9 @@ h4 {font-size: 12pt;}
 
 /* Chapter numbering */
 /* Need to reset all counters at the same time if using the same element */
-body {counter-reset: h2 0 tables 0 figures 0;}
-h2 {counter-reset: h3 0}
-h3 {counter-reset: h4}
+body {counter-reset: h2 0 tables 0 figures 0}
+h2 {counter-reset: h3 0 }
+h3 {counter-reset: h4 0 }
 h4 {counter-reset: h5}
 h5 {counter-reset: h6}
 
