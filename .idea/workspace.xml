@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ricardo_template_style.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ricardo_template_style.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Test_template-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_template.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ricardo_template_example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Ricardo_template_example.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +19,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="719">
+              <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/styles2.css">
+        <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="36" column="57" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -41,6 +60,27 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>caption</find>
+      <find>#DAA520</find>
+      <find>#</find>
+      <find>toc-item-</find>
+      <find>ff</find>
+      <find>FF</find>
+      <find>nbex</find>
+      <find>font</find>
+      <find>font-</find>
+      <find>number_se</find>
+      <find>colo</find>
+      <find>toc</find>
+      <find>highli</find>
+      <find>toc2</find>
+      <find>colors</find>
+      <find>color</find>
+      <find>hover_</find>
+      <find>highlight</find>
+      <find>#0070C0</find>
+      <find>cfg</find>
+      <find>downlo</find>
+      <find>true</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,8 +90,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/styles.css" />
-        <option value="$PROJECT_DIR$/styles/styles.css" />
         <option value="$PROJECT_DIR$/styles/styles2.css" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/custom_toc.yaml" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/custom_toc.js" />
+        <option value="$PROJECT_DIR$/styles/styles.css" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/README.md" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.css" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.yaml" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/main.js" />
+        <option value="$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.js" />
       </list>
     </option>
   </component>
@@ -66,10 +113,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="335" />
-    <option name="y" value="23" />
-    <option name="width" value="920" />
-    <option name="height" value="775" />
+    <option name="x" value="158" />
+    <option name="y" value="167" />
+    <option name="width" value="1723" />
+    <option name="height" value="1254" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -88,6 +135,12 @@
               <item name="ricardo_template_style" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ricardo_template_style" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ricardo_template_style" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="ricardo_custom_toc" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -97,7 +150,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/ricardo_custom_toc" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gg6\OneDrive - Ricardo Plc\GitHub\ricardo_template_style\styles\ricardo_custom_toc" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,12 +183,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="335" y="23" width="920" height="775" extended-state="0" />
-    <editor active="true" />
+    <frame x="127" y="134" width="1378" height="1003" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978038" visible="true" weight="0.27474973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978038" visible="true" weight="0.14772727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5021962" side_tool="true" visible="true" weight="0.27474973" />
+      <window_info id="Favorites" order="2" sideWeight="0.5021962" side_tool="true" weight="0.27474973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -145,21 +202,65 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/styles.css" />
     <entry file="file://$PROJECT_DIR$/styles/styles2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
+        <state relative-caret-position="1377">
           <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/toc2.yaml" />
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="719">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
         </state>
       </provider>
     </entry>
