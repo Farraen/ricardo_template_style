@@ -30,6 +30,105 @@ width: auto;
 padding-left: 20px;
 }*/
 
+<style>
+
+/* Headings */
+
+/* Dummy added as it does not seem to render the first one */
+
+h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption {}
+
+h1, h2, h3, h4 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-top: 3pt;
+    padding-bottom: 3pt;
+    text-align: left;
+    color: #0070C0 !important;
+}
+
+h1 {font-size: 20pt; text-align: center}
+h2 {font-size: 20pt;}
+h3 {font-size: 16pt;}
+h4 {font-size: 12pt;}
+
+/* Chapter numbering */
+/* Need to reset all counters at the same time if using the same element */
+/* body {counter-reset: h2 0 tables 0 figures 0}
+h2 {counter-reset: h3 0}
+h3 {counter-reset: h4 0}
+h4 {counter-reset: h5 0}
+h5 {counter-reset: h6 0}
+
+h2:before {counter-increment: h2; content: counter(h2) ". "}
+h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+*/
+body {counter-reset: tables 0 figures 0}
+
+
+/* Body text */
+p, body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 11pt;
+    color: black;
+}
+
+/* Tables */
+table, th, td {border: 1px solid black;}
+table { border-collapse: collapse;}
+thead {background-color: #0070C0; color: white;}
+
+.rendered_html table, .rendered_html td, .rendered_html th {
+    border: 1px solid black !important;
+}
+
+
+/* Captions */
+caption, figcaption {
+    color: black !important;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+caption:before {counter-increment: tables; content: "Table " counter(tables) ". "}
+figcaption:before {counter-increment: figures; content: "Figure " counter(figures) ". "}
+
+/* Comments */
+div.todo {
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+    border-left: 5px solid #dfb5b4;
+    padding: 0.5em;
+    }
+
+div.commenter1 {
+    background-color: lemonchiffon;
+    border-color: black;
+    border-left: 5px solid gold;
+    padding: 0.5em;
+    }
+
+div.commenter2 {
+    background-color: lightcyan;
+    border-color: black;
+    border-left: 5px solid cyan;
+    padding: 0.5em;
+    }
+
+div.commenter3 {
+    background-color: lavender;
+    border-color: black;
+    border-left: 5px solid blueviolet;
+    padding: 0.5em;
+    }
+
+
+
+</style>
+
 #navigate_menu {
   list-style-type: none;
   max-width: 800px;
