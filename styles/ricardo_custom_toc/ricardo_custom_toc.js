@@ -28,7 +28,7 @@
         colors: {
             hover_highlight: '#C0C0C0',
             selected_highlight: '#E2ECF2',
-            running_highlight: '#0070C0',
+            running_highlight: '#E2ECF2',
             wrapper_background: '#FFFFFF',
             sidebar_border: '#EEEEEE',
             navigate_text: '#333333',

@@ -85,7 +85,7 @@ Parameters:
 - name: ricardo_custom_toc.colors.running_highlight
   input_type: color
   description: Color of sections with running cells
-  default: "#0070C0"
+  default: "#E2ECF2"
 - name: ricardo_custom_toc.colors.wrapper_background
   input_type: color
   description: Color of wrapper window background
