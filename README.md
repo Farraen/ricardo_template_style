@@ -1,6 +1,6 @@
-# Ricardo custom table of contents
+# Ricardo styles for jupyter notebook
 
-Read and follow the instructions in 'Custom_TOC.ipynb'
+Read and follow the instructions in 'ricardo_template_styles.ipynb'
 
 
 
