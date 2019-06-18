@@ -11794,21 +11794,6 @@ $( document ).ready(function(){
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
-
-<span class="c1"># Run this cell to apply styling</span>
-<span class="n">custom_style_file</span> <span class="o">=</span> <span class="s1">&#39;styles/ricardo_stylesheet.css&#39;</span>
-<span class="n">styles</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">custom_style_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">HTML</span><span class="p">(</span><span class="n">styles</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -11816,8 +11801,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -11928,34 +11912,9 @@ div.commenter3 {
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;/styles/ricardo_logo.png&quot;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">80</span><span class="p">,</span> <span class="n">embed</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -11963,8 +11922,7 @@ div.commenter3 {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
-
+<div class="prompt"> </div>
 
 
 
@@ -11989,22 +11947,37 @@ width=80
 
 <h1 id="Ricardo-template-for-Jupyter-Notebooks">Ricardo template for Jupyter Notebooks<a class="anchor-link" href="#Ricardo-template-for-Jupyter-Notebooks">&#182;</a></h1><h2 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h2><p>This template provides instructions to create reports with a consistent look and feel.</p>
 <h3 id="Enable-the-style-sheet">Enable the style sheet<a class="anchor-link" href="#Enable-the-style-sheet">&#182;</a></h3><p>Custom styling for headers, automatic numbering of tables etc is added using a stylesheet.</p>
-<p>This is a css file saved in this repo:</p>
+<p>Copy the "styles" folder from this GitHub repository to your project folder:</p>
 
-<pre><code>ricardo_template_style/
+<pre><code>https://github.com/genagibson/ricardo_template_style/
     styles/
         ricardo_stylesheet.css
 
 </code></pre>
-<p>You can copy this file to any project you are working on and activate it using the following commands:</p>
+<p>The styles are saved in a css file. You can activate it using the following commands:</p>
 
-<pre><code>custom_style_file = '/styles/ricardo_stylesheet.css' # or the path to the style sheet
+<pre><code>from IPython.core.display import HTML, Image, display
+custom_style_file = '/styles/ricardo_stylesheet.css' # or the path to the style sheet
 styles = open(custom_style_file, 'r').read()
 HTML(styles)
 
+</code></pre>
+<p>It provides the formatting for headings, numbered figure captions and tables.</p>
+<h3 id="Add-the-logo">Add the logo<a class="anchor-link" href="#Add-the-logo">&#182;</a></h3><p>The logo image file is saved in the same "styles" folder as the css file. If you copied the styles folder across already, you can add it to the top of your report using the following command at the top of the page:</p>
+
+<pre><code>Image(filename = "/styles/ricardo_logo.png", width = 80, embed = True)
 
 </code></pre>
-<h3 id="Useful-extensions">Useful extensions<a class="anchor-link" href="#Useful-extensions">&#182;</a></h3><p>Nbextensions offers a lot of useful tools. You can enable this on your machine but running the following in terminal:</p>
+<p>(the import statement used for the styles will also import the necessary Image module. Otherwise you can add: from IPython.core.display import HTML, Image, display)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Set-up-extensions">Set up extensions<a class="anchor-link" href="#Set-up-extensions">&#182;</a></h3><p>Nbextensions offers a lot of useful tools. You can enable this on your machine but running the following in terminal:</p>
 
 <pre><code>pip install jupyter_contrib_nbextensions
 pip install jupyter_nbextensions_configurator
@@ -12017,17 +11990,6 @@ jupyter contrib nbextension install --user
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;figcaption&gt; Location of nbextensions configurator &lt;/figcaption&gt;&#39;</span><span class="p">))</span>
-<span class="n">Image</span><span class="p">(</span><span class="s1">&#39;files/pictures/nbextensions.PNG&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">250</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12035,8 +11997,7 @@ jupyter contrib nbextension install --user
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -12047,8 +12008,7 @@ jupyter contrib nbextension install --user
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
-
+<div class="prompt"> </div>
 
 
 
@@ -12098,17 +12058,6 @@ width=250
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;figcaption&gt; Turn on the TOC sidebar &lt;/figcaption&gt;&#39;</span><span class="p">))</span>
-<span class="n">Image</span><span class="p">(</span><span class="s1">&#39;files/pictures/Enable_TOC.PNG&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">800</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12116,8 +12065,7 @@ width=250
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -12128,8 +12076,7 @@ width=250
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
-
+<div class="prompt"> </div>
 
 
 
@@ -12169,23 +12116,18 @@ width=800
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tables-and-figures">Tables and figures<a class="anchor-link" href="#Tables-and-figures">&#182;</a></h2><h3 id="Tables">Tables<a class="anchor-link" href="#Tables">&#182;</a></h3><p>Use <code>style.set_caption</code> to add numbered captions for tables. The formatting comes from the ricardo_stylesheet.css</p>
+<h2 id="Tables-and-figures">Tables and figures<a class="anchor-link" href="#Tables-and-figures">&#182;</a></h2><h3 id="Tables">Tables<a class="anchor-link" href="#Tables">&#182;</a></h3><p>Use <code>style.set_caption</code> option within pandas to add numbered captions for tables. The formatting comes from the ricardo_stylesheet.css, which you need to enable in order to see the Ricardo colours.</p>
+<p>As an example, you can run the following code to get the table output below:</p>
+
+<pre><code>import seaborn as sns
+import pandas as pd
+iris = sns.load_dataset('iris')
+iris.head().style.set_caption('Example table')</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;iris&#39;</span><span class="p">)</span>
-<span class="n">iris</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Example table&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12193,8 +12135,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[37]:</div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12254,18 +12195,16 @@ width=800
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Numbers should increment automatically</span>
-<span class="n">iris</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Example table&#39;</span><span class="p">)</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The numbering should increment automatically (this also comes from the css file).</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -12273,8 +12212,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[39]:</div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12341,21 +12279,15 @@ width=800
 <h3 id="Figures">Figures<a class="anchor-link" href="#Figures">&#182;</a></h3><p>Since we might use various packages to create figures, the captions are created using HTML tag <code>&lt;figcaption&gt;</code> and automatically numbered in the same way as for tables, using the ricardo_stylesheet.css file.</p>
 <p>To display HTML from within a code cell, we need to wrap the tag in <code>display(HTML())</code> as shown below.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;figcaption&gt; Example figure - output showing &lt;/figcaption&gt;&#39;</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">],</span> <span class="n">iris</span><span class="p">[</span><span class="s1">&#39;sepal_width&#39;</span><span class="p">],</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
-</pre></div>
+<pre><code>import pandas as pd
+import matplotlib.pyplot as plt
+display(HTML('&lt;figcaption&gt; Example figure - output showing &lt;/figcaption&gt;'))
+plt.scatter(iris['sepal_length'], iris['sepal_width'], alpha = 0.5)</code></pre>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -12363,8 +12295,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -12375,8 +12306,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[42]:</div>
-
+<div class="prompt"> </div>
 
 
 
@@ -12388,8 +12318,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 
@@ -12409,23 +12338,15 @@ width=800
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You may notice outputs like <code>[&lt;matplotlib.lines.Line2D at 0x113c26898&gt;]</code>. This is because Jupyter renders the return value of the function as well as the graphical output. You can suppress the value and only show the plot by appending <code>;</code> to a command</p>
+<p>You may notice outputs like <code>[&lt;matplotlib.lines.Line2D at 0x113c26898&gt;]</code>. This is because Jupyter renders the return value of the function as well as the graphical output. You can suppress the value and only show the plot by appending <code>;</code> to a command:</p>
+
+<pre><code>display(HTML('&lt;figcaption&gt; Example figure - output hidden &lt;/figcaption&gt;'))
+plt.scatter(iris['sepal_length'], iris['sepal_width'], alpha = 0.5);</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;figcaption&gt; Example figure - output hidden &lt;/figcaption&gt;&#39;</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">],</span> <span class="n">iris</span><span class="p">[</span><span class="s1">&#39;sepal_width&#39;</span><span class="p">],</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">);</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12433,8 +12354,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -12445,8 +12365,7 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 
@@ -12476,23 +12395,16 @@ width=800
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Internal-comments">Internal comments<a class="anchor-link" href="#Internal-comments">&#182;</a></h2><p>Several built-in styles are provided to make commenting easier. These can be rendered in Markdown cells or in code.</p>
+<p>Example code:</p>
+
+<pre><code>display(HTML('''&lt;div class = "todo"&gt; 
+    Note: Things to do. This will be visible in exported HTML
+&lt;/div&gt;'''))</code></pre>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;div class = &quot;todo&quot;&gt; </span>
-<span class="s1">    Note: Things to do. This will be visible in exported HTML</span>
-<span class="s1">&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12500,13 +12412,12 @@ width=800
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
 <div class = "todo"> 
-    Note: Things to do. This will be visible in exported HTML
+    Note: class 'todo'. This will be visible in exported HTML
 </div>
 </div>
 
@@ -12520,74 +12431,69 @@ width=800
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;div class = 'commenter1'&gt;
-    Markdown: Comments from first author. Markdown will not be rendered in HTML
-&lt;/div&gt;</p>
+<p>You have several built-in options from the css file, which give different colours. You can access these by changing the class to different options:</p>
+<ul>
+<li>todo (red)</li>
+<li>commenter1 (yellow)</li>
+<li>commenter2 (blue)</li>
+<li>commenter3 (purple)</li>
+</ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"> </div>
+
+
+<div class="output_html rendered_html output_subarea ">
+<div class = 'commenter1'>
+    Comments class 'commenter1'
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;div class = 'commenter2'&gt;
-    Comments from second author
-&lt;/div&gt;</p>
-<p>&lt;div class = 'commenter3'&gt;
-    Comments from third author
-&lt;/div&gt;</p>
+<div class = 'commenter2'>
+    Comments class 'commenter2'
+</div>
+
+<div class = 'commenter3'>
+    Comments class 'commenter3'
+</div>
+
+
+</div>
+
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Export-to-HTML">Export to HTML<a class="anchor-link" href="#Export-to-HTML">&#182;</a></h2><p>Use the command below to export the notebook to HTML while retaining the table of contents (save the notebook first).</p>
-<p>NB: in the current version, the colour scheme for the TOC does not update. This seems to be a bug in the extension and may be fixed in later versions.</p>
+
+<pre><code>jupyter nbconvert Ricardo_template_example.ipynb --template toc2
+
+</code></pre>
+<p>You need to navigate to your project folder in terminal and run the command there.</p>
+<p>NB: in the current version, the colour scheme for the TOC does not update. This seems to be a bug in the extension and may be fixed in later versions.  This command needs to be run from the terminal if you don't want the outputs to be shown.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert Ricardo_template_example.ipynb --template toc2
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>[NbConvertApp] Converting notebook Ricardo_template_example.ipynb to html
-[NbConvertApp] Writing 380742 bytes to Ricardo_template_example.html
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Alternatively, you can save the file as html by choosing file&gt;download as&gt;.html embedded. Exporting regular html will not include embedded pictures.</p>
+<p>Alternatively, you can save the file as html by choosing file&gt;download as&gt;.html embedded, although this may not bring the table of contents across. Exporting regular html will not include embedded pictures.</p>
 
 </div>
 </div>
@@ -12598,22 +12504,12 @@ width=800
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hiding-code">Hiding code<a class="anchor-link" href="#Hiding-code">&#182;</a></h2><p>To remove code from the output, make sure you have <code>hide code all</code> extension enabled.
 Refresh the notebook and select the new icon in the ribbon. This is useful for removing code prior to sharing with clients and colleagues.</p>
+<p>You can also hide individual cells using the ^ button next to it.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;figcaption&gt; Hide all code cells &lt;/figcaption&gt;&#39;</span><span class="p">))</span>
-<span class="n">Image</span><span class="p">(</span><span class="s1">&#39;files/pictures/hide_input.PNG&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">800</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -12621,8 +12517,7 @@ Refresh the notebook and select the new icon in the ribbon. This is useful for r
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
+<div class="prompt"> </div>
 
 
 <div class="output_html rendered_html output_subarea ">
@@ -12633,8 +12528,7 @@ Refresh the notebook and select the new icon in the ribbon. This is useful for r
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
-
+<div class="prompt"> </div>
 
 
 
