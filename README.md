@@ -1,6 +1,7 @@
-# Ricardo styles for jupyter notebook
+# Ricardo templates and guidance
 
-Read and follow the instructions in 'ricardo_template_example.ipynb'
-
+* __00_Setup.html:__ Instructions for downloading Python and Jupyter Notebooks
+* __01_Ricardo_template_example.html__: Instructions for setting up Ricardo templates for your Jupyter Notebooks
+* __02_First_notebook.ipynb__: Exercises to familiarise with the Notebook
 
 
