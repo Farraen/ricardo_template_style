@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ricardo_template_style.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ricardo_template_style.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Custom_TOC-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Custom_TOC-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Custom_TOC.html" beforeDir="false" afterPath="$PROJECT_DIR$/Custom_TOC.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Custom_TOC_files/Custom_TOC_10_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Custom_TOC_files/Custom_TOC_5_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Custom_TOC_files/Custom_TOC_8_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example_files/Ricardo_template_example_12_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example_files/Ricardo_template_example_14_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example_files/Ricardo_template_example_5_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/Enable_TOC.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/html_file.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/install_location.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/location.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/ric_toc.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/ricardo_custom_toc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/ricardo_custom_toc.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/ricardo_custom_toc.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ricardo_custom_toc/toc2.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Ricardo_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/export.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/original_files/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/original_files/toc2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/original_files/toc2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ricardo_custom_toc/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ricardo_custom_toc/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ricardo_custom_toc/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Ricardo_template_example-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Ricardo_template_example-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Ricardo_template_example.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/ricardo_stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ricardo_stylesheet.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,29 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.tpl">
+        <entry file="file://$PROJECT_DIR$/styles/ricardo_stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="185" selection-start-line="185" selection-end-line="185" />
+            <state relative-caret-position="87">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -130,14 +80,15 @@
         <option value="$PROJECT_DIR$/files/ricardo_custom_toc/main.css" />
         <option value="$PROJECT_DIR$/files/styles/styles.css" />
         <option value="$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.tpl" />
+        <option value="$PROJECT_DIR$/styles/ricardo_stylesheet.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="155" />
-    <option name="y" value="165" />
-    <option name="width" value="1725" />
-    <option name="height" value="1255" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="93" />
+    <option name="y" value="99" />
+    <option name="width" value="1048" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -159,13 +110,6 @@
             <path>
               <item name="ricardo_template_style" type="b2602c69:ProjectViewProjectNode" />
               <item name="ricardo_template_style" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="ricardo_custom_toc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ricardo_template_style" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ricardo_template_style" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -210,9 +154,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="93" y="99" width="1048" height="801" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978038" visible="true" weight="0.1541555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978038" visible="true" weight="0.21226874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021962" side_tool="true" weight="0.27474973" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -246,62 +190,18 @@
     <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/ricardo_custom_toc.js" />
     <entry file="file://$PROJECT_DIR$/styles/ricardo_custom_toc/main.js" />
     <entry file="file://$PROJECT_DIR$/styles/styles.css" />
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/toc2.py">
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/README.md" />
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/toc2.py" />
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/main.js" />
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.js" />
+    <entry file="file://$PROJECT_DIR$/files/styles/styles.css" />
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.yaml" />
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/main.css" />
+    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.tpl" />
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="87">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
