@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Ricardo_template_example-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_template_example.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup.ipynb" beforeDir="false" />
-    </list>
+    <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +164,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="93" y="23" width="1048" height="801" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978038" visible="true" weight="0.21226874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
