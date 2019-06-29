@@ -3,7 +3,7 @@
 
 
 /* Dummies added as it does not seem to render the first one */
-h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption, footer, footnote {}
+h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption, footer, footnote, split_cell {}
 
 
 /* Headings */
@@ -104,5 +104,9 @@ div.footnote {
 
 }
 
+/* split_cell */
+div.split_cell{
+    float: left !important;
+    width: 50%  !important;}
 </style>
 
