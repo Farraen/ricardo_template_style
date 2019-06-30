@@ -65,9 +65,9 @@ define([
 		if (cell_style == "split") 
 			{return "float:left; width:50%;";}
 		else if (cell_style == "split_large")
-		    {return "float:left !important; width:66% !important;";}
+		    {return "float:left !important; width:64% !important;";}
 		else if (cell_style == "split_small")
-		    {return "float:left !important; width:32% !important;";}
+		    {return "float:left !important; width:33% !important;";}
 		else
 		    {return "width:100%;";}
 	};
