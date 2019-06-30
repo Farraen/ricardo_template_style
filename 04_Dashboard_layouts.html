@@ -13605,10 +13605,13 @@ Required-by:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Copy the following file from this location in the repo and save it in the jupyter extentions template folder:</p>
+<p>Copy the following files from this location in the repository and save them in the jupyter extentions template folder:</p>
 
-<pre><code>custom_templates/
-    ricardo_dash_with_TOC.tpl    </code></pre>
+<pre><code>(or wherever you have saved the folder)
+https://github.com/genagibson/ricardo_template_style/
+    custom_templates/
+        ricardo_dash_with_TOC.tpl
+        ricardo_dash_no_TOC.tpl</code></pre>
 
 </div>
 </div>
@@ -13618,7 +13621,11 @@ Required-by:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Exporting-with-nbconvert">Exporting with nbconvert<a class="anchor-link" href="#Exporting-with-nbconvert">&#182;</a></h3><p>Make sure you have the Ricardo stylesheet enabled - use the guide in 01_Ricardo_template_example.html if you aren't sure how to do this.</p>
 <p>Now you can use the following command to export your document to html:</p>
-<div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="n">name</span><span class="o">.</span><span class="n">ipynb</span> <span class="o">--</span><span class="n">template</span> <span class="n">ricardo_dash_with_TOC</span>
+<div class="highlight"><pre><span></span><span class="c1"># Version with the clickable table of contents</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="n">name</span><span class="o">.</span><span class="n">ipynb</span> <span class="o">--</span><span class="n">template</span> <span class="n">ricardo_dash_with_TOC</span>
+
+<span class="c1"># Version without a table of contents (for more screen space)</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="n">name</span><span class="o">.</span><span class="n">ipynb</span> <span class="o">--</span><span class="n">template</span> <span class="n">ricardo_dash_no_TOC</span>
 </pre></div>
 
 </div>
@@ -13991,10 +13998,10 @@ define(&#39;unsetWidth&#39;, function() {
 
 
 
-<div id="36b9391e-eb3d-4dbc-be46-f09c32871dec"></div>
+<div id="41001151-59a5-4382-9fb2-a11db645da22"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#36b9391e-eb3d-4dbc-be46-f09c32871dec');
+var element = $('#41001151-59a5-4382-9fb2-a11db645da22');
 
 require.undef('setWidth');
 define('setWidth', function() {
@@ -14067,10 +14074,10 @@ define('unsetWidth', function() {
 
 
 
-<div id="c44d94fe-bbaf-479c-a2b3-9689bea8a1a5"></div>
+<div id="24620d9c-5e73-453c-973d-53cd40d52098"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c44d94fe-bbaf-479c-a2b3-9689bea8a1a5');
+var element = $('#24620d9c-5e73-453c-973d-53cd40d52098');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split");
@@ -14121,10 +14128,10 @@ var element = $('#c44d94fe-bbaf-479c-a2b3-9689bea8a1a5');
 
 
 
-<div id="4b675e71-bce2-4a86-b49d-34e3b1f3e365"></div>
+<div id="3973ee68-f8ba-43d3-a08c-7360395016e0"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#4b675e71-bce2-4a86-b49d-34e3b1f3e365');
+var element = $('#3973ee68-f8ba-43d3-a08c-7360395016e0');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split");
@@ -14175,10 +14182,10 @@ var element = $('#4b675e71-bce2-4a86-b49d-34e3b1f3e365');
 
 
 
-<div id="6fe7e15e-73c9-422d-8f73-fb2bd323ca45"></div>
+<div id="b708541b-3ebd-4c23-9296-25e7996fbb21"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#6fe7e15e-73c9-422d-8f73-fb2bd323ca45');
+var element = $('#b708541b-3ebd-4c23-9296-25e7996fbb21');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split_large");
@@ -14229,10 +14236,10 @@ var element = $('#6fe7e15e-73c9-422d-8f73-fb2bd323ca45');
 
 
 
-<div id="2f512f9c-202b-4d46-8c50-4b3dfe941f55"></div>
+<div id="fd45be45-abd3-4a54-a7e1-d497792b3fdc"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#2f512f9c-202b-4d46-8c50-4b3dfe941f55');
+var element = $('#fd45be45-abd3-4a54-a7e1-d497792b3fdc');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split_small");
