@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Blank_report_template-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Blank_report_template-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/04_Dashboard_layouts-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/04_Dashboard_layouts-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Dashboard_layouts.html" beforeDir="false" afterPath="$PROJECT_DIR$/04_Dashboard_layouts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04_Dashboard_layouts.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04_Dashboard_layouts.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blank_report_template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Blank_report_template.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,11 +104,11 @@
         <option value="$PROJECT_DIR$/files/ricardo_custom_toc/main.css" />
         <option value="$PROJECT_DIR$/files/styles/styles.css" />
         <option value="$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.tpl" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/custom_templates/ricardo_dash_with_TOC.tpl" />
         <option value="$PROJECT_DIR$/Ricardo_splitcell/readme.md" />
         <option value="$PROJECT_DIR$/styles/ricardo_stylesheet.css" />
         <option value="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -232,16 +232,6 @@
     <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.yaml" />
     <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/main.css" />
     <entry file="file://$PROJECT_DIR$/files/ricardo_custom_toc/ricardo_custom_toc.tpl" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom_templates/splitcell.js" />
     <entry file="file://$PROJECT_DIR$/custom_templates/ricardo_dash_with_TOC.tpl">
       <provider selected="true" editor-type-id="text-editor">
@@ -269,6 +259,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/splitcell.yaml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="121" selection-start-line="6" selection-start-column="121" selection-end-line="6" selection-end-column="121" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/splitcell.js">
       <provider selected="true" editor-type-id="text-editor">
