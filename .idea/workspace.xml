@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/04_Dashboard_layouts-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/04_Dashboard_layouts-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Blank_report_template-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Blank_report_template-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_Dashboard_layouts.html" beforeDir="false" afterPath="$PROJECT_DIR$/04_Dashboard_layouts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04_Dashboard_layouts.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04_Dashboard_layouts.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blank_report_template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Blank_report_template.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_templates/ricardo_dash.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_templates/ricardo_dash_with_TOC.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/custom_templates/ricardo_dash_with_TOC.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ricardo_stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ricardo_stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/ricardo_stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="1680">
               <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
             </state>
           </provider>
@@ -35,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/splitcell.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="371">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -112,8 +107,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/custom_templates/ricardo_dash_with_TOC.tpl" />
         <option value="$PROJECT_DIR$/Ricardo_splitcell/readme.md" />
-        <option value="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" />
         <option value="$PROJECT_DIR$/styles/ricardo_stylesheet.css" />
+        <option value="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" />
       </list>
     </option>
   </component>
@@ -255,6 +250,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/ricardo_stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -265,17 +267,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/ricardo_stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/splitcell.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/splitcell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="371">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>

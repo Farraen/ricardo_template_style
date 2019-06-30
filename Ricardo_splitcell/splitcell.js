@@ -65,14 +65,13 @@ define([
 		if (cell_style == "split") 
 			{return "float:left; width:50%;";}
 		else if (cell_style == "split_large")
-		    {return "float:left; width:65%;";}
+		    {return "float:left !important; width:66% !important;";}
 		else if (cell_style == "split_small")
-		    {return "float:left; width:32%;";}
-		return "width:100%;";
+		    {return "float:left !important; width:32% !important;";}
+		else
+		    {return "width:100%;";}
 	};
 
-		return "width:100%;";
-	};
 
 	var update_cell_style_element = function(cell){
 		var cell_style_html = get_cell_style_html(cell.metadata.cell_style);
