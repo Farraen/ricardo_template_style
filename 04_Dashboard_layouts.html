@@ -13570,7 +13570,7 @@ width=800
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip show jupyter_contrib_nbextensions
@@ -13597,8 +13597,8 @@ Home-page: https://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
 Author: ipython-contrib and jupyter-contrib developers
 Author-email: jupytercontrib@gmail.com
 License: BSD
-Location: /anaconda3/lib/python3.7/site-packages
-Requires: jupyter-latex-envs, jupyter-core, pyyaml, traitlets, nbconvert, jupyter-highlight-selected-word, jupyter-contrib-core, tornado, lxml, jupyter-nbextensions-configurator, ipython-genutils, notebook
+Location: c:\users\gg6\appdata\local\continuum\anaconda3\lib\site-packages
+Requires: lxml, notebook, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-contrib-core, jupyter-nbextensions-configurator, traitlets, ipython-genutils, nbconvert, tornado, jupyter-highlight-selected-word
 Required-by: 
 </pre>
 </div>
@@ -13677,15 +13677,21 @@ https://github.com/genagibson/ricardo_template_style/
         ricardo_stylesheet.css
 
 </code></pre>
-<p>On your computer, navigate to:</p>
-<p><code>~/.jupyter</code></p>
-<p>This is where the notebook files are stored. If there is already a folder called custom, save the ricardo_stylesheet.css in there. If not, create the folder. Rename ricardo_stylesheet.css to custom.css. Your file structure should look like this:</p>
+<p>Run the following command in terminal:</p>
 
-<pre><code>~/.jupyter/
-    custom/
-        custom.css
+<pre><code>`pip show notebook`
 
 </code></pre>
+<p>This will show you where the anaconda installation of the notebook is saved (under 'Location'). Save the custom css file in there, so that the file structure looks like this:</p>
+
+<pre><code>C:\Users\gg6\AppData\Local\Continuum\anaconda3\lib\python3.7\site-packages (or your own path)
+    notebook/
+        static/
+            custom/
+                custom.css # remember to rename ricardo_stylesheet to custom.css
+
+</code></pre>
+<p>There will already be a custom.css in the folder: overwrite it.</p>
 <p>Close down the notebook entirely, including the terminal, and restart to see the changes.</p>
 <h3 id="Exporting-with-nbconvert">Exporting with nbconvert<a class="anchor-link" href="#Exporting-with-nbconvert">&#182;</a></h3><p>Now you can use the following command to export your document to html:</p>
 <div class="highlight"><pre><span></span><span class="c1"># Version with the clickable table of contents</span>
@@ -13897,7 +13903,8 @@ Required-by:
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter contrib nbextensions install
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This will hang if executing from the notebook on Windows machines - use terminal instead</span>
+<span class="o">!</span>jupyter contrib nbextensions install
 </pre></div>
 
     </div>
@@ -14130,10 +14137,10 @@ define(&#39;unsetWidth&#39;, function() {
 
 
 
-<div id="5230dccc-63dd-4e04-a44b-b2c452454f67"></div>
+<div id="87eda474-c562-4205-bf60-feeda44c0817"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#5230dccc-63dd-4e04-a44b-b2c452454f67');
+var element = $('#87eda474-c562-4205-bf60-feeda44c0817');
 
 require.undef('setWidth');
 define('setWidth', function() {
@@ -14206,10 +14213,10 @@ define('unsetWidth', function() {
 
 
 
-<div id="98676c32-3297-4eb1-be40-9004499fdabe"></div>
+<div id="400995a3-0b4d-4547-bfca-60ad2fc17212"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#98676c32-3297-4eb1-be40-9004499fdabe');
+var element = $('#400995a3-0b4d-4547-bfca-60ad2fc17212');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split");
@@ -14260,10 +14267,10 @@ var element = $('#98676c32-3297-4eb1-be40-9004499fdabe');
 
 
 
-<div id="c2138e9f-cf38-46a2-8fe4-f6b52fc35f6c"></div>
+<div id="752f284f-e0c2-422a-96a5-b757326dd4f8"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c2138e9f-cf38-46a2-8fe4-f6b52fc35f6c');
+var element = $('#752f284f-e0c2-422a-96a5-b757326dd4f8');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split");
@@ -14314,10 +14321,10 @@ var element = $('#c2138e9f-cf38-46a2-8fe4-f6b52fc35f6c');
 
 
 
-<div id="54967187-fde4-4572-ab09-3480c9363583"></div>
+<div id="953b29aa-2631-4674-a702-9e14bba66496"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#54967187-fde4-4572-ab09-3480c9363583');
+var element = $('#953b29aa-2631-4674-a702-9e14bba66496');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split_large");
@@ -14368,10 +14375,10 @@ var element = $('#54967187-fde4-4572-ab09-3480c9363583');
 
 
 
-<div id="cca2fdcd-cb3c-431f-914e-4cc58073dc58"></div>
+<div id="caf5cbb9-1a46-4fa0-973d-9a01d3a6e91b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#cca2fdcd-cb3c-431f-914e-4cc58073dc58');
+var element = $('#caf5cbb9-1a46-4fa0-973d-9a01d3a6e91b');
 
             require(['setWidth'], function(setWidth) {
                 setWidth(element, "split_small");
