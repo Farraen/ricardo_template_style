@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>01_Ricardo_template_example</title>
+<title>01_Ricardo_template_setup</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13152,7 +13152,7 @@ $( document ).ready(function(){
 
 
 /* Dummies added as it does not seem to render the first one */
-h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption, footer, footnote {}
+h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption, footer, footnote, split_cell, split_cell_small, split_cell_large {}
 
 
 /* Headings */
@@ -13252,6 +13252,17 @@ div.footnote {
     text-align: right;
 
 }
+
+/* split_cells */
+div.split_cell{
+    float: left !important;
+    width: 50%  !important;}
+div.split_cell_large{
+    float: left !important;
+    width: 67%  !important;}
+div.split_cell_small{
+    float: left !important;
+    width: 33%  !important;}
 
 </style>
 
@@ -13372,9 +13383,77 @@ width=80
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Enable-the-style-sheet">Enable the style sheet<a class="anchor-link" href="#Enable-the-style-sheet">&#182;</a></h3><p>Custom styling for headers, automatic numbering of tables etc is added using a stylesheet.</p>
-<p>Copy the "styles" folder from this GitHub repository to your project folder:</p>
+<p>It provides the formatting for headings, numbered figure captions and tables.</p>
+<h4 id="Enable-for-all-Notebooks">Enable for <u>all</u> Notebooks<a class="anchor-link" href="#Enable-for-all-Notebooks">&#182;</a></h4><p>First, copy the ricardo_stylesheet.css file from the main GitHub repository. It is located here:</p>
 
 <pre><code>https://github.com/genagibson/ricardo_template_style/
+    styles/
+        ricardo_stylesheet.css
+
+</code></pre>
+<p>On your computer, navigate to:</p>
+<p><code>~/.jupyter</code></p>
+<p>This is where the notebook files are stored. If there is already a folder called custom, save the ricardo_stylesheet.css in there. If not, create the folder. Your file structure should look like this:</p>
+
+<pre><code>~/.jupyter/
+    custom/
+        ricardo_stylesheet.css
+
+</code></pre>
+<p>Close down the notebook entirely, including the terminal, and restart to see the changes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"> </div>
+
+
+<div class="output_html rendered_html output_subarea ">
+<div class = "todo"> 
+    <b>NB:</b> I recommend you enable the stylesheet automatically for <b>all</b> of your Notebooks. 
+    There are other functions that will be introduced later, which rely on the Ricardo stylesheet to work. 
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you don't see the Ricardo styles after restarting, try running the following command:</p>
+
+<pre><code>`pip show notebook`
+
+</code></pre>
+<p>This will show you where the anaconda installation of the notebook is saved (under 'Location'). Save the custom css file in there, so that the file structure looks like this:</p>
+
+<pre><code>anaconda3/lib/python3.7/site-packages/ (or your own path)
+    notebook/
+        ricardo_stylesheet.css</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Enable-it-for-a-specific-notebook">Enable it for a specific notebook<a class="anchor-link" href="#Enable-it-for-a-specific-notebook">&#182;</a></h4><p>If for some reason, you don't want to set up the stylesheet for all Notebooks, or if you ever want to use a different css file, you can enable them for specific Notebooks.</p>
+<p>To do this, copy the whole "styles" folder from this GitHub repository to your project folder: <a href="https://github.com/genagibson/ricardo_template_style/">https://github.com/genagibson/ricardo_template_style/</a></p>
+<p>You project folder will now look like this:</p>
+
+<pre><code>project folder/ (where your working notebooks are)
     styles/
         ricardo_stylesheet.css
 
@@ -13385,7 +13464,13 @@ width=80
 <span class="n">styles</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">custom_style_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">HTML</span><span class="p">(</span><span class="n">styles</span><span class="p">)</span>
 </pre></div>
-<p>It provides the formatting for headings, numbered figure captions and tables.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Add-the-logo">Add the logo<a class="anchor-link" href="#Add-the-logo">&#182;</a></h3><p>The logo image file is saved in the same "styles" folder as the css file. If you copied the styles folder across already, you can add it to the top of your report using the following command at the top of the page:</p>
 <div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;styles/ricardo_logo.png&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">80</span><span class="p">,</span> <span class="n">embed</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 </pre></div>
@@ -13406,7 +13491,7 @@ width=80
 
 <div class="output_html rendered_html output_subarea ">
 <div class = "commenter1"> 
-    <i>NB: The import statement used for the styles will also import the necessary Image module.</i>
+    <b>NB: </b>The import statement used for the styles will also import the necessary Image module.
 </div>
 </div>
 
