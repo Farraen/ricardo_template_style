@@ -32,7 +32,7 @@ define([
 		var prefix = 'auto';
 		var name = 'toggle-cell-style';
 		var action = {
-			icon : 'fa-arrows-h',
+			icon : 'fa-smile-o',
 			help : 'Toggle split/centered cell style',
 			help_index : 'eb',
 			id : 'split_cells',
@@ -53,8 +53,10 @@ define([
 
 	var toggle_cell_style = function(){
 		var cell = Jupyter.notebook.get_selected_cell();
-		if (!("cell_style" in cell.metadata)){cell.metadata.cell_style = 'split';}
-		else if (cell.metadata.cell_style == 'center'){cell.metadata.cell_style = 'split';}
+		if (!("cell_style" in cell.metadata)){cell.metadata.cell_style = 'split_large';}
+		else if (cell.metadata.cell_style == 'center'){cell.metadata.cell_style = 'split_large';}
+		else if (cell.metadata.cell_style == 'split_large'){cell.metadata.cell_style = 'split';}
+		else if (cell.metadata.cell_style == 'split'){cell.metadata.cell_style = 'split_small';}
 		else {cell.metadata.cell_style = 'center';}
 
 		update_cell_style_element(cell);
@@ -65,7 +67,7 @@ define([
 		if (cell_style == "split") 
 			{return "float:left; width:50%;";}
 		else if (cell_style == "split_large")
-		    {return "float:left !important; width:64% !important;";}
+		    {return "float:left !important; width:66% !important;";}
 		else if (cell_style == "split_small")
 		    {return "float:left !important; width:33% !important;";}
 		else
