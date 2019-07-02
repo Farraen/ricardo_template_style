@@ -13350,8 +13350,7 @@ width=80
 <div class = 'todo'> 
     <b>Before you start, check that you have the latest version of this guidance:</b> <br>
     Go to the GitHub repository: <a href https://github.com/genagibson/ricardo_template_style> https://github.com/genagibson/ricardo_template_style </a> <br>
-    Right click on '01_ricardo_template_style.html', select `save link as` and view in your browser, since GitHub will not render the html <br>
-    (check it is the html file, rather than the ipynb file)
+    Download the repository as a zip file, or clone it if you know how to use Git. 
 </div>
 </div>
 
@@ -13373,15 +13372,21 @@ width=80
         ricardo_stylesheet.css
 
 </code></pre>
-<p>On your computer, navigate to:</p>
-<p><code>~/.jupyter</code></p>
-<p>This is where the notebook files are stored. If there is already a folder called custom, save the ricardo_stylesheet.css in there. If not, create the folder. <b> Rename the css file to "custom.css"</b>. Your file structure should look like this:</p>
+<p>In terminal, run</p>
 
-<pre><code>~/.jupyter/
-    custom/
-        custom.css  # Important: rename the file to custom.css
+<pre><code>`pip show notebook`
 
 </code></pre>
+<p>This will show you where the Anaconda installation of the notebook is saved (under 'Location'). Save the custom css file in there, so that the file structure looks like this:</p>
+
+<pre><code>anaconda3/lib/python3.7/site-packages/ (or your own path)
+    notebook/
+        static/
+            custom/
+                custom.css
+
+</code></pre>
+<p>There will already be a custom.css in the folder: overwrite it.</p>
 <p>Close down the notebook entirely, including the terminal, and restart to see the changes.</p>
 
 </div>
@@ -13414,21 +13419,13 @@ width=80
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you don't see the Ricardo styles after restarting, try running the following command:</p>
+<p>If you don't see the Ricardo styles after restarting, it may be that you installed jupyter separately from Anaconda. In which case, find the following location on your computer:</p>
+<p><code>~/.jupyter</code></p>
+<p>This is where the notebook files are stored. If there is already a folder called custom, save the ricardo_stylesheet.css in there If not, create the folder. <b> Rename the css file to "custom.css"</b>. Your file structure should look like this:</p>
 
-<pre><code>`pip show notebook`
-
-</code></pre>
-<p>This will show you where the anaconda installation of the notebook is saved (under 'Location'). Save the custom css file in there, so that the file structure looks like this:</p>
-
-<pre><code>anaconda3/lib/python3.7/site-packages/ (or your own path)
-    notebook/
-        static/
-            custom/
-                custom.css
-
-</code></pre>
-<p>There will already be a custom.css in the folder: overwrite it.</p>
+<pre><code>~/.jupyter/
+    custom/
+        custom.css  # Important: rename the file to custom.css</code></pre>
 
 </div>
 </div>
