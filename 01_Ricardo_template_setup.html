@@ -14072,8 +14072,8 @@ width=250
 
 <div class="output_html rendered_html output_subarea ">
 <div class = 'todo'> 
-    <i>NB:</i> Since entering data into the Plotly format is cumbersome, for any serious project using interactive graphs, use loops and custom functions.<br>
-    <b>There is a separate tutorial on interactive plotting: 03_Simple_dashboards.html</b>
+    <b>NB:</b> Since entering data into the Plotly format is cumbersome, for any serious project using interactive graphs, use loops and custom functions.<br>
+    <i>There is a separate tutorial on interactive plotting: 03_Simple_interactive_reports.html</i>
 </div>
 </div>
 
@@ -14237,12 +14237,20 @@ This will not bring the table of contents across. Exporting regular html will no
 <span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">template</span><span class="o">=</span><span class="n">nbextensions</span> <span class="o">--</span><span class="n">to</span><span class="o">=</span><span class="n">html</span> <span class="n">notebook</span><span class="o">.</span><span class="n">ipynb</span>
 </pre></div>
 </li>
+</ol>
+<p><b>For a simple check:</b></p>
+<ol>
 <li>Open the HTML file in your browser</li>
 <li>Ctrl + P to print</li>
 <li>Choose save as PDF</li>
 <li>Choose More settings &gt; untick headers and footers</li>
 </ol>
-<p>This will "print what you see", so ensure the HTML file looks just as you want it. You will not see the numbered headings, as these come from the TOC2 extension and this won't be exported.</p>
+<p>This will "print what you see", so ensure the HTML file looks just as you want it. You will not see the numbered headings, as these come from the TOC2 extension and this won't be exported. There will also probably be strange page breaks as it tries not to split cells across pages.</p>
+<p><b>For a more professional look:</b></p>
+<ol>
+<li>The best free service I've found is: <a href="https://www.sejda.com/html-to-pdf">https://www.sejda.com/html-to-pdf</a>, which picks up the table of contents and generally seems able to handle complex formatting. If you find a better one, let me know. </li>
+<li>However, it's limited to 50MB, so not suitable for very large files. </li>
+</ol>
 
 </div>
 </div>
