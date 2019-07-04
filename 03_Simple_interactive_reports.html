@@ -13274,14 +13274,14 @@ $( document ).ready(function(){
 
 
 /* Dummies added as it does not seem to render the first one */
-h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption, footer, footnote {}
+h1, h2, h3, h4, h5, h6, body, p, div, table, th, td, thead, caption, article, figcaption, footer, footnote, split_cell, split_cell_small, split_cell_large {}
 
 
 /* Headings */
 h1, h2, h3, h4 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-    padding-top: 3pt;
-    padding-bottom: 3pt;
+    padding-top: 0pt;
+    padding-bottom: 1pt;
     text-align: left;
     color: #0070C0 !important;
 }
@@ -13375,6 +13375,17 @@ div.footnote {
 
 }
 
+/* split_cells */
+div.split_cell{
+    float: left !important;
+    width: 50%  !important;}
+div.split_cell_large{
+    float: left !important;
+    width: 67%  !important;}
+div.split_cell_small{
+    float: left !important;
+    width: 33%  !important;}
+
 </style>
 
 
@@ -13432,10 +13443,10 @@ width=80
 
 
 <div class="output_html rendered_html output_subarea ">
-<div class = "todo"> 
+<div class = 'todo'> 
     <b>Before you start, check that you have the latest version of this guidance:</b> <br>
     Go to the GitHub repository: <a href https://github.com/genagibson/ricardo_template_style> https://github.com/genagibson/ricardo_template_style </a> <br>
-    Right click on '03_Simple_dashboards.html', select `save link as` and view in your browser, since GitHub will not render the html <br>
+    Download the repository as a zip file, or clone it if you know how to use Git. 
 </div>
 </div>
 
@@ -14626,7 +14637,7 @@ We can even go further and get the function to print the graph out for us by def
 <hr> 
 <div class = 'footnote'>
 Contact gena.gibson@ricardo.com for suggestions <br>
-Version last updated on 20 July 2019
+Version last updated on 20 June 2019
 </div>
 </div>
 
