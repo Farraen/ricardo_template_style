@@ -5,6 +5,8 @@
 * __02_First_notebook.ipynb__: Exercises to familiarise with the Notebook, introduction to frequently-used libraries etc
 * __03_Simple_interactive_reports.html__: Walkthough examples of how to create simple (linear flowing) interactive reports in Jupyter
 * __04_Dashboard_layouts.html__: Instructions to set up your computer so that you can create dashboard layouts in Jupyter
+* __05_automatically_write_notebooks.html__: Using code to automatically generate Notebooks. Great for repeating sections of a Notebook that can be generated with a loop
+* __06_Environments_and_deep_learning.html__: How to set up environments on your machine, in general and specifically for deep learning
  
 
 To save a copy of this folder on your desktop, you can download the whole folder:
