@@ -13287,15 +13287,15 @@ width=80
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 
-<h1 id="Setting-up-environments-on-your-laptop">Setting up environments on your laptop<a class="anchor-link" href="#Setting-up-environments-on-your-laptop">&#182;</a></h1><h1 id="(general-and-deep-learning-example)">(general and deep learning example)<a class="anchor-link" href="#(general-and-deep-learning-example)">&#182;</a></h1><h2 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h2><p>This file contains instructions to set up environments for use with your python coding.</p>
+<h1 id="Setting-up-environments-on-your-laptop">Setting up environments on your laptop<a class="anchor-link" href="#Setting-up-environments-on-your-laptop">&#182;</a></h1><h1 id="(general-and-deep-learning-example)">(general and deep learning example)<a class="anchor-link" href="#(general-and-deep-learning-example)">&#182;</a></h1><h2 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h2><p>This file contains instructions to set up environments that you can use with your python coding.</p>
 <h3 id="Why-do-we-need-environments?">Why do we need environments?<a class="anchor-link" href="#Why-do-we-need-environments?">&#182;</a></h3><p>Since python libraries are constantly evolving, using different versions can break other packages</p>
 <ul>
 <li>Environments keep packages/language version separate</li>
-<li>Environments mean that packages you install for one project don't break the ones you have for another</li>
-<li>They mean that your colleagues can run the same code without errors - important for reproduceable results on different machines!!</li>
-<li>Ideally create a new environment for each project</li>
+<li>Environments mean that packages you install for one project don't break the packages you have for another project</li>
+<li>They mean that your colleagues can run the same code without errors - important for reproducible results on different machines!!</li>
+<li>Ideally, try to create a new environment for each project</li>
 </ul>
-<p>A specific exmaple is give for deep learning, since there are difficult dependencies that can lead to problems. It may take you hours to find a solution by installing individual packages: using this tutorial should have you set up in minutes.  You need specific versions of python for our favoured deep learning libraries (Tensorflow and Keras) to work properly.</p>
+<p>A specific example is give for deep learning, since there are difficult dependencies that can lead to problems. It may take you hours to find a solution by installing individual packages: using this tutorial should have you set up in minutes.  You need specific versions of python for our preferred deep learning libraries (Tensorflow and Keras) to work properly.</p>
 <p>There are also other environments available to set up a consistent set of packages for other projects - see the repository.</p>
 
 </div>
@@ -13347,7 +13347,7 @@ width=80
       ricardo_general.yml
       ... others may be added</code></pre>
 </li>
-<li><p>Clone the repository into Git (if you are using proper version control - highly recommended you do it this way!!</p>
+<li><p>Clone the repository into Git (if you are using proper version control - highly recommended you do it this way!)</p>
 <ul>
 <li>Otherwise, copy the repository to somewhere on your desktop</li>
 </ul>
@@ -13363,8 +13363,8 @@ width=80
 </ul>
 </li>
 </ul>
-<p>Or whichever file you are using.</p>
-<p>Setup may take a few minutes and several printouts will appear. It should look roughly like this:</p>
+<p>Or whichever yml file you are using.</p>
+<p>Setup may take a few minutes while all of the packages are installed, and several printouts will appear. It should look roughly like this:</p>
 
 </div>
 </div>
@@ -13433,7 +13433,7 @@ but the same steps can be used for any environment: <br>Just change the *.yml to
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="What-is-it-doing?">What is it doing?<a class="anchor-link" href="#What-is-it-doing?">&#182;</a></h3><p>While we wait, let's go over what is happening. The yml file (or yaml) is creating a separate set of python languages and packages in a specific environment called ricardo_deep_learning. This means that anything you install in other environments won't interfere with or break the work you're doing in this environment.</p>
+<h3 id="What-is-it-doing?">What is it doing?<a class="anchor-link" href="#What-is-it-doing?">&#182;</a></h3><p>While we wait, let's go over what is happening. The yml file (or yaml) is creating a separate set of python packages in a specific environment called ricardo_deep_learning. This means that anything you install in other environments won't interfere with or break the work you're doing in this environment.</p>
 <p>Conda is a tool that manages these environments for us.</p>
 
 </div>
@@ -13456,7 +13456,7 @@ but the same steps can be used for any environment: <br>Just change the *.yml to
 </ul>
 </li>
 </ol>
-<p>When the environment is working, you can see that your base will change to (deep_learning). This is how you know it's turned on.</p>
+<p>When the environment is working, you can see that your base will change to (ricardo_deep_learning).</p>
 
 </div>
 </div>
@@ -13500,7 +13500,7 @@ width=800
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This environment set-up has been tested to work with really complicated neural nets, so you should be fine to do whatever you want.  To test if it's working, launch a Jupyter Notebook from the activated environment and type in:</p>
+<p>This environment set-up has been tested to work with rather complicated neural nets, so you should be fine to do whatever you want.  To test if it's working, launch a Jupyter Notebook from the activated environment and type in:</p>
 
 <pre><code>import keras
 keras.layers.Dense(20)
@@ -13558,9 +13558,9 @@ width=800
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Managing-packages">Managing packages<a class="anchor-link" href="#Managing-packages">&#182;</a></h2><h3 id="Installing-new-packages-into-the-environment">Installing new packages into the environment<a class="anchor-link" href="#Installing-new-packages-into-the-environment">&#182;</a></h3><p>You'll notice that the environment is fairly clean - it only has the packages that were explicitly included in the yml file. I added the main libraries that are likely to be important.</p>
-<p>However, you can always install packages within this new environment by using <code>pip install [package]</code>. However, remember that this means that other people using the same environment won't have access to that package.</p>
-<p>For full reproduceability, you should update the .yml file and give a new name for your project, then share it with the team.</p>
+<h2 id="Managing-packages">Managing packages<a class="anchor-link" href="#Managing-packages">&#182;</a></h2><h3 id="Installing-new-packages-into-the-environment">Installing new packages into the environment<a class="anchor-link" href="#Installing-new-packages-into-the-environment">&#182;</a></h3><p>You'll notice that the environment only has the packages that were explicitly included in the yml file. I added the main libraries that are likely to be important.</p>
+<p>You can always install packages within this new environment by using <code>pip install [package]</code>. However, remember that this means that other people using the same environment won't have access to that package.</p>
+<p>For full reproducibility, you should create a new .yml file for your project, then share it with the team.</p>
 <h3 id="Check-your-list-of-environments">Check your list of environments<a class="anchor-link" href="#Check-your-list-of-environments">&#182;</a></h3><p>If you're following the advice from earlier, you'll end up with a big list of environments. You can always check what they are by running:</p>
 
 <pre><code>conda info --envs
