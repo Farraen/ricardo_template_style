@@ -13482,6 +13482,30 @@ width=80
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"> </div>
+
+
+<div class="output_html rendered_html output_subarea ">
+<div class = "commenter1"> 
+Normally when you define a filepath, say if you're reading from a folder in the same directory as the notebook, 
+you'd omit the '/' at the start of the filepath. When reading from Drive, it always starts with '/content/gdrive/My Drive/'
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13499,12 +13523,14 @@ width=80
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Callback to save the model every 2 epochs</span>
 <span class="kn">from</span> <span class="nn">keras.callbacks</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="c1"># Saves the models into our previously created model_results folder</span>
 <span class="n">filepath</span><span class="o">=</span><span class="s2">&quot;/content/gdrive/My Drive/model_results/epochs:</span><span class="si">{epoch:03d}</span><span class="s2">-val_loss:</span><span class="si">{val_loss:.3f}</span><span class="s2">.hdf5&quot;</span>
 <span class="n">checkpoint</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">monitor</span><span class="o">=</span><span class="s1">&#39;val_loss&#39;</span><span class="p">,</span> 
                              <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
                              <span class="n">save_best_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
                              <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
-                             <span class="n">period</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+                             <span class="n">period</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># Change to a different period as needed</span>
 <span class="n">callbacks_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">checkpoint</span><span class="p">]</span>
 </pre></div>
 
@@ -13513,11 +13539,33 @@ width=80
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"> </div>
+
+
+<div class="output_html rendered_html output_subarea ">
+<div class = "commenter1"> 
+Make sure you've created the target folder following the steps above. Otherwise the model will fail on training. </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Training-your-model">Training your model<a class="anchor-link" href="#Training-your-model">&#182;</a></h2><h3 id="Define-the-model-(optional-part)">Define the model (optional part)<a class="anchor-link" href="#Define-the-model-(optional-part)">&#182;</a></h3><p>Set up your keras model as normal. We'll use a toy example here with the MNIST data and train a de-noising autoencoder.</p>
-<p>You can skip this part - the model design is not important, it is how to use the callbacks that we are interesting in</p>
+<p>You can skip this part - the model design is not important. We are mainly interested in how to use the callbacks.</p>
 
 </div>
 </div>
@@ -13597,7 +13645,7 @@ width=80
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see from the shapes that we need an extra channel at the end. It should be (len, 28, 28, 1)</p>
+<p>We can see from the shapes that we need an extra channel at the end. It should be (len, 28, 28, 1). Let's add that using the reshape method.|</p>
 
 </div>
 </div>
@@ -13787,7 +13835,7 @@ epochs:006-val_loss:0.103.hdf5
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Fantastic! This means that if we get disconnected, or we decide we want to go back to an earlier model, we can just load them from the drive.</p>
-<p>If we want to re-load any of those models and resume training, we can just pick the file we want and load it into the model.</p>
+<p>If we want to re-load any of those models and resume training, we can just pick the file we want and load it into the model. Here, we've chosen the model from epoch 8</p>
 
 </div>
 </div>
@@ -13810,7 +13858,7 @@ epochs:006-val_loss:0.103.hdf5
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Continue-training-a-previous-model">Continue training a previous model<a class="anchor-link" href="#Continue-training-a-previous-model">&#182;</a></h3><p>Let's carry on training that model for a further 5 epochs and see if we get any more improvement.</p>
-<p>You can see that the loss doesn't start from the same point as when we were training the model from scratch, because we've already got weights from the previous 9 epochs loaded.</p>
+<p>You can see that the loss doesn't start from the same point as when we were training the model from scratch, because we've already got weights from the previous 8 epochs loaded.</p>
 
 </div>
 </div>
