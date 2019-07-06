@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1469adad-abfd-4436-b358-f180f3256e7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_Setup.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/00_Setup.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_templates/ricardo_dash_no_TOC.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/custom_templates/ricardo_dash_no_TOC.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,20 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ricardo_environments/ricardo_deep_learning.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1218">
-              <caret line="207" column="38" lean-forward="true" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ricardo_environments/environment.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="3105">
+              <caret line="207" column="38" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -94,7 +84,6 @@
         <option value="$PROJECT_DIR$/custom_templates/ricardo_dash_with_TOC.tpl" />
         <option value="$PROJECT_DIR$/Ricardo_splitcell/readme.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/custom_templates/ricardo_dash_no_TOC.tpl" />
         <option value="$PROJECT_DIR$/styles/ricardo_stylesheet.css" />
         <option value="$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" />
         <option value="$PROJECT_DIR$/ricardo_extensions/ricardo_splitcell/splitcell.js" />
@@ -102,11 +91,12 @@
         <option value="$PROJECT_DIR$/ricardo_environments/ricardo_deep_learning.yml" />
         <option value="$PROJECT_DIR$/ricardo_environments/ricardo_general.yml" />
         <option value="$PROJECT_DIR$/ricardo_environments/environment.yml" />
+        <option value="$PROJECT_DIR$/custom_templates/ricardo_dash_no_TOC.tpl" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="379" />
+    <option name="x" value="317" />
     <option name="y" value="23" />
     <option name="width" value="1123" />
     <option name="height" value="722" />
@@ -180,7 +170,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="379" y="23" width="1123" height="722" extended-state="0" />
+    <frame x="317" y="23" width="1123" height="722" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978038" visible="true" weight="0.19782214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -243,13 +234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_templates/ricardo_dash_no_TOC.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/readme.md" />
     <entry file="file://$PROJECT_DIR$/Ricardo_splitcell/splitcell.js" />
     <entry file="file://$PROJECT_DIR$/styles/ricardo_stylesheet.css">
@@ -266,31 +250,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ricardo_environments/deep_learning.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ricardo_environments/ricardo_general.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-538">
-          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ricardo_environments/ricardo_deep_learning.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="207" column="38" lean-forward="true" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ricardo_environments/deep_learning.yml" />
+    <entry file="file://$PROJECT_DIR$/ricardo_environments/ricardo_general.yml" />
     <entry file="file://$PROJECT_DIR$/ricardo_environments/environment.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_templates/ricardo_dash_no_TOC.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ricardo_environments/ricardo_deep_learning.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="207" column="38" selection-start-line="207" selection-start-column="38" selection-end-line="207" selection-end-column="38" />
         </state>
       </provider>
     </entry>
