@@ -7,6 +7,7 @@
 * __04_Dashboard_layouts.html__: Instructions to set up your computer so that you can create dashboard layouts in Jupyter
 * __05_automatically_write_notebooks.html__: Using code to automatically generate Notebooks. Great for repeating sections of a Notebook that can be generated with a loop
 * __06_Environments_and_deep_learning.html__: How to set up environments on your machine, in general and specifically for deep learning
+* __07_training_models_in_colab.html__: For deep learning models using Google's GPU
  
 
 To save a copy of this folder on your desktop, you can download the whole folder:
