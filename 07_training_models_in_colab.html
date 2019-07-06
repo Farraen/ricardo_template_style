@@ -13253,6 +13253,17 @@ $( document ).ready(function(){
             });
     });
 </script>
+
+
+<script>
+<style type="text/css">
+.split_cell {
+  float: left !important;
+  width: 50%  !important;
+}
+</style>
+</script
+>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13287,7 +13298,8 @@ width=80
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 
-<h1 id="Training-models-on-Google-Colab">Training models on Google Colab<a class="anchor-link" href="#Training-models-on-Google-Colab">&#182;</a></h1><h2 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h2><p>Using the free GPU on Google Colab can massively speed up training of large models. The downside is that it can randomly disconnect at busy times, and with automatically disconnect you after around 8 hours of runtime.</p>
+<h1 id="Training-models-on-Google-Colab">Training models on Google Colab<a class="anchor-link" href="#Training-models-on-Google-Colab">&#182;</a></h1><p><b> Authors: </b> Gena Gibson</p>
+<h2 id="Intro">Intro<a class="anchor-link" href="#Intro">&#182;</a></h2><p>Using the free GPU on Google Colab can massively speed up training of large models. The downside is that it can randomly disconnect at busy times, and with automatically disconnect you after around 8 hours of runtime.</p>
 <p>To get around this limitation, this notebook shows how to save models during training so that they can be reloaded later. It's also useful for recovering previous training weights if the model starts to overfit.</p>
 
 </div>

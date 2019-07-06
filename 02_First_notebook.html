@@ -13253,6 +13253,17 @@ $( document ).ready(function(){
             });
     });
 </script>
+
+
+<script>
+<style type="text/css">
+.split_cell {
+  float: left !important;
+  width: 50%  !important;
+}
+</style>
+</script
+>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13294,6 +13305,7 @@ width=80
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><b> Authors: </b> Gena Gibson</p>
 <p>We will refer to the Python 3 <a href="https://docs.python.org/3/">documentation</a>.</p>
 <p><i> This notebook is adapted from Harvard CS109a material </i></p>
 
@@ -16500,13 +16512,21 @@ sklearn is not recommended for statistics that require interpretation. Use it fo
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You need to point to the correct filepath. The one below works if you're running the notebook from inside the tutorial_notebook folder. Otherwise, you should adjust it to point to wherever you data is saved.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read in the csv files</span>
-<span class="n">dfcars</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;files/mtcars.txt&#39;</span><span class="p">)</span>
+<span class="n">dfcars</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;files/mtcars.txt&#39;</span><span class="p">)</span> <span class="c1"># If you are running the notebook inside the tutorial_notebook folder</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">dfcars</span><span class="p">)</span>
 </pre></div>
 
